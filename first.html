@@ -7,11 +7,15 @@ function rectangle()
   w = document.getElementById("w");
   r = document.getElementById("result");
   r.innerHTML = h.value * w.value;
+  var canvas= document.getElementById("canvas");
+  var ctx= canvas.getContext("2d");
+  ctx.fillStyle="rgb(200,0,0)";
+  ctx.fillRect(10,10,10+h.value,10+w.value);
 }
 </script>
 Height: <input id="h"/>
 Width: <input id="w"/>
 <input type="submit" onclick="rectangle()"/>
 <p id="result">tib test</p>
-
+<canvas id="canvas" width=150 height=150></canvas>
 </html>
