@@ -1,21 +1,17 @@
 <html>
 <h1>test tom</h1>
 <script> 
-  f = function (n) {return n/5+6}
-  document.write("<p>"+f(7)+"</p>")
+function rectangle()
+{
+  h = document.getElementById("h");
+  w = document.getElementById("w");
+  r = document.getElementById("result");
+  r.innerHTML = h.value * w.value;
+}
 </script>
-<script>
-  f= function (l,w) {return l*w}
-  document.write("<p>"+f(8,7)+"</p>")
-</script>
-<script>
-  f= function (l,w) {return l*w/2}
-  document.write("<p>"+f(8,7)+"</p>")
-</script>
-<script>
-  f= function (b,h) {return b*h/2}
-  document.write("<p>"+f(5,6)+"</p>")
-</script>
-<p>tib test</p>
+Height: <input id="h"/>
+Width: <input id="w"/>
+<input type="submit" onclick="rectangle()"/>
+<p id="result">tib test</p>
 
 </html>
